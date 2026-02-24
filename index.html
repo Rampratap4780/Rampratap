@@ -207,6 +207,31 @@
             border: 1px solid rgba(0, 243, 255, 0.2);
         }
 
+        /* Project Links (New addition for Demo & Source Code) */
+        .project-links { 
+            display: flex; 
+            gap: 15px; 
+            margin-top: 20px; 
+            flex-wrap: wrap; 
+        }
+        .project-links a {
+            color: var(--text-main);
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            transition: 0.3s;
+            border-bottom: 1px solid transparent;
+            padding-bottom: 2px;
+        }
+        .project-links a:hover { 
+            color: var(--primary); 
+            text-shadow: 0 0 10px var(--primary);
+            border-bottom: 1px solid var(--primary);
+        }
+
         /* Certificates Section */
         .cert-card {
             display: flex;
@@ -296,6 +321,7 @@
     <section id="projects">
         <h2 class="section-title reveal">System <span>Architecture</span> & Projects</h2>
         <div class="grid">
+            
             <div class="card reveal">
                 <h3>CodeArena</h3>
                 <p>A full-stack competitive coding platform allowing users to write, compile, and execute code in real-time. Features dynamic leaderboards and secure user authentication.</p>
@@ -303,6 +329,24 @@
                     <span class="tag">MongoDB</span> <span class="tag">Express</span>
                     <span class="tag">React</span> <span class="tag">Node.js</span>
                     <span class="tag">Compiler API</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://code-arena-frontend-rho.vercel.app/" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    <a href="https://github.com/Rampratap4780/CodeArena-Frontend" target="_blank"><i class="fab fa-github"></i> Frontend</a>
+                    <a href="https://github.com/Rampratap4780/CodeArena-backend" target="_blank"><i class="fab fa-github"></i> Backend</a>
+                </div>
+            </div>
+
+            <div class="card reveal">
+                <h3>Personal Blog Website</h3>
+                <p>A responsive platform for publishing and reading technical articles and personal blogs, featuring a clean and intuitive user interface.</p>
+                <div class="tags">
+                    <span class="tag">HTML5</span> <span class="tag">CSS3</span>
+                    <span class="tag">JavaScript</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://rampratap4780.github.io/Blog-Website/" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    <a href="https://github.com/Rampratap4780/Blog-Website" target="_blank"><i class="fab fa-github"></i> Source Code</a>
                 </div>
             </div>
 
@@ -313,6 +357,9 @@
                     <span class="tag">React.js</span> <span class="tag">Node.js</span>
                     <span class="tag">AI API</span> <span class="tag">RESTful APIs</span>
                 </div>
+                <div class="project-links">
+                    <a href="https://github.com/Rampratap4780/AI-Powered-Travel-Planner" target="_blank"><i class="fab fa-github"></i> Source Code</a>
+                </div>
             </div>
 
             <div class="card reveal">
@@ -321,6 +368,9 @@
                 <div class="tags">
                     <span class="tag">JavaScript</span> <span class="tag">React</span>
                     <span class="tag">CoinGecko API</span> <span class="tag">Chart.js</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/Rampratap4780/cryptocurrency-tracker" target="_blank"><i class="fab fa-github"></i> Source Code</a>
                 </div>
             </div>
 
@@ -332,6 +382,7 @@
                     <span class="tag">Database Management</span> <span class="tag">OOP</span>
                 </div>
             </div>
+            
         </div>
     </section>
 
